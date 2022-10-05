@@ -29,7 +29,15 @@
   <li>Electronic design automation of integrated systems (EDA) </li>
   <li>Computer design</li>
 </ul>
-<h2 style="clear: left">Short Bio</h2>
+
+<ul id="navigation" style="clear: left">
+  <li><a href="#short_bio">Short Bio</a></li>
+  <li><a href="#selected_publications">Selected Publications</a></li>
+  <li><a href="#open_source_software">Open Source Software</a></li>
+  <li><a href="#selected_projects">Selected Projects</a></li>
+</ul>
+  
+<h2 id="short_bio">Short Bio</h2>
 <p>
 Hai Wang received the B.S. degree from Huazhong University of Science and
 Technology, China, and the M.S. and Ph.D. degrees from University of
@@ -64,7 +72,7 @@ Click <a href="./slides/research_sum_en.pdf">here</a> for the
 slides which introduce our recent research advances.
 </p>
 
-<h2>Selected Publications (since 2016)</h2>
+<h2 id="selected_publications">Selected Publications (since 2016)</h2>
 <p>The authors with star marker * are my students.</p>
 <ol type="1">
   <li><b>H. Wang</b>, X. Long*, and X.-X. Liu, "<a
@@ -132,18 +140,8 @@ Automation Conference (ASP-DAC), Macao,
 China, January 2016. (<b>invited</b>) (<b>CCF C rank</b>)</li>
 </ol>
 
-<h2>Selected Projects</h2>
-<ol type="1">
-  <li> Power budgeting and runtime performance optimization of
-  multi-core systems in dark silicon, funded by National Natural
-  Science Fundation of China (NSFC), 2020-2023. </li>
-  <li> Fast analysis and runtime optimization for thermal induced
-  reliability of 3D ICs, funded by National Natural
-  Science Fundation of China (NSFC), 2015-2017. </li>
-</ol>
-
-<h2>Open Source Software</h2>
-<h3>Greedy Dynamic Power (GDP)</h3>
+<h2 id="open_source_software">Open Source Software</h2>
+<h3>1. Greedy Dynamic Power (GDP)</h3>
 
 Greedy dynamic power (GDP) is a dynamic power budgeting method which
 provides a high power budget for the multi/many-core systems. It
@@ -153,22 +151,36 @@ the unintegrated GDP code and an implementation of GDP integrated into
 the HotSniper simulator are provided:
 <ul>
   <li>
-  The unintegrated GDP code can
-  be downloaded <a
-  href="./software/gdp.tgz" download>here</a>, which can be used in a performance-thermal simulator or in your
+  <a href="./software/gdp.tgz">The unintegrated GDP code</a>. You can
+  integrate it into a performance-thermal simulator or into your
   own performance-thermal simulation flow.
   </li>
   <li>
-  An implementation of
-  integrating GDP into the HotSniper
-  simulator, which is ready-to-run, is available <a
-  href="https://github.com/wanghaiuestc/HotSniper_GDP">here</a>. By running this program, one can analyze the performance/power/thermal behavior of a multi/many-core system running multi-threaded benchmarks like the PARSEC benchmark, with optimized active core distributions and power budgets provided by GDP dynamically at runtime.
+  <a href="https://github.com/wanghaiuestc/HotSniper_GDP">A
+  ready-to-run implementation of integrating GDP into the HotSniper
+  simulator</a>. By running this program, one can readily analyze the performance/power/thermal behavior of a multi/many-core system running multi-threaded benchmarks like the PARSEC benchmark, with optimized active core distributions and power budgets provided by GDP dynamically at runtime.
+  </li>
+  <li>
+  Related publication: H. Wang, D. Tang, M. Zhang, S. Tan, C. Zhang, H. Tang, and
+Y. Yuan, "<a href="./papers/TC_gdp_author_copy.pdf">GDP: A greedy based dynamic power budgeting method for
+multi/many-core systems in dark silicon</a>", IEEE Transactions on
+Computers (TC), vol. 68, no. 4, pp. 526-541, April 2019.
   </li>
 </ul>
+
+<h2 id="selected_projects">Selected Projects</h2>
+<ol type="1">
+  <li> Power budgeting and runtime performance optimization of
+  multi-core systems in dark silicon, funded by National Natural
+  Science Fundation of China (NSFC), 2020-2023. </li>
+  <li> Fast analysis and runtime optimization for thermal induced
+  reliability of 3D ICs, funded by National Natural
+  Science Fundation of China (NSFC), 2015-2017. </li>
+</ol>
   
 
 <script type="text/javascript" src="https://free-hit-counters.net/count/2fqb"></script><br>
  <a href='http://www.counter-zaehler.de'>pennergame besucherzähler</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=54d813a6dcfe6bbc3d1dadb9e8cf50383f2454bd'></script>
 
-<!-- hhmts start -->Last modified: Mon Oct  3 12:05:46 CST 2022 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Wed Oct  5 18:03:36 CST 2022 <!-- hhmts end -->
 </body> </html>
