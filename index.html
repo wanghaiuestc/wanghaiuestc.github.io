@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+\<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -75,14 +75,17 @@ slides which introduce our recent research advances.
 <h2 id="selected_publications">Selected Publications (since 2016)</h2>
 <p>The authors with star marker * are my students.</p>
 <ol type="1">
+  <li><b>H. Wang</b>, J. Chen*, Y. Chen, and J. Li, "<a href="https://www.sciencedirect.com/science/article/pii/S0925231226016838">fastiRNN: Fast inference of recurrent neural networks at the post-training stage</a>", Neurocomputing, vol. 698, October 2026. (<b>JCR Q1, IF 6.7</b>)</li>
+  <li>J. Chen*, Y. Xie*, and <b>H. Wang</b>, "<a href="https://www.sciencedirect.com/science/article/pii/S0893608025013401">fastiSSM: Fast inference of state space model with online model approximation in frequency-domain</a>", Neural Networks, vol. 197, May 2026. (<b>CCF B rank</b>)</li>
+  <li><b>H. Wang</b>, Y. Luo*, J. Guo*, Y. Chen, and J. Li, "<a href="./papers/TCAD_homo_3d_author_copy.pdf">Power Budgeting of Homogeneous 3-D Processors in Dark Silicon</a>", IEEE Transactions on Computer-Aided Design of Integrated Circuits and
+Systems (TCAD), 2026. (early access, <b>CCF A rank</b>)</li>
   <li><b>H. Wang</b>, X. Long*, and X.-X. Liu, "<a
   href="./papers/tnnls_fastesn_author_copy.pdf">FastESN: Fast echo
   state network</a>", IEEE Transactions on Neural Networks and
-  Learning Systems (TNNLS), 2022. (early access, <b>JCR Q1, IF 10.4, CCF B rank</b>)</li>
-    <li><b>H. Wang</b>, W. He*, Q. Yang*, X. Peng, and H. Tang, "<a
-  href="./papers/tcad_dbp_author_copy.pdf">DBP: Distributed power
+  Learning Systems (TNNLS), vol. 34, no. 12, pp. 10487-10501, December 2023. (<b>JCR Q1, IF 10.4, CCF B rank</b>)</li>
+  <li><b>H. Wang</b>, W. He*, Q. Yang*, X. Peng, and H. Tang, "<a href="./papers/tcad_dbp_author_copy.pdf">DBP: Distributed power
   budgeting for many-core systems in dark silicon</a>", IEEE Transactions on Computer-Aided Design of Integrated Circuits and
-Systems (TCAD), 2022. (early access, <b>CCF A rank</b>)</li>
+Systems (TCAD), vol. 41, no. 12, pp. 5727-5731, December 2022. (<b>CCF A rank</b>)</li>
   <li><b>H. Wang</b>, W. Li*, W. Qi*, D. Tang*, L. Huang, and H. Tang, "<a href="./papers/j_mem_3d_preprint.pdf">Runtime performance optimization of 3-D
 microprocessors in dark silicon</a>", IEEE Transactions on
   Computers (TC), vol. 70, no. 10, pp. 1539-1554, October 2021. (<b>CCF A
@@ -184,6 +187,33 @@ fastESN creates a smaller echo state network (ESN) model of user defined size, a
   </li>
   <li>
   Related publication: H. Wang, X. Long, X.-X. Liu, "<a href="./papers/tnnls_fastesn_author_copy.pdf">fastESN: Fast Echo State Network</a>", IEEE Transactions on Neural Networks and Learning Systems (TNNLS), vol. 34, no. 12, December 2023, pp. 10487-10501.
+  </li>
+</ul>
+
+<h3>4. fastiRNN: fast inference of recurrent neural network</h3>
+
+fastiRNN is a post-training fast inference framework for general RNN architectures. It is compatible to most RNN structures including the vanilla RNN, LSTM, and GRU, etc. However, for echo state network (ESN) which is also a type of RNN, please use fastESN instead for extra performance. 
+
+<ul>
+  <li>
+  <a href="https://github.com/wanghaiuestc/fastiRNN">Code</a> of fastiRNN. 
+  </li>
+  <li>
+  Related publication: H. Wang, J. Chen, Y. Chen, and J. Li, "<a href="https://www.sciencedirect.com/science/article/pii/S0925231226016838">fastiRNN: Fast inference of recurrent neural networks at the post-training stage</a>", Neurocomputing, vol. 698, October 2026.
+  </li>
+</ul>
+
+<h3>5. fastiSSM: fast inference of state space model</h3>
+
+fastiSSM accelerates the inference of general SSMs through online model approximation. Besides the standard SSM structure shown above, fastiSSM can also
+be applied to many standard SSM variants, including LSSL, S4D, DSS, GSS, S5, etc.
+
+<ul>
+  <li>
+  <a href="https://github.com/uestc-eda/fastiSSM">Code</a> of fastiSSM. 
+  </li>
+  <li>
+  Related publication: J. Chen, Y. Xie, and H. Wang, "<a href="https://www.sciencedirect.com/science/article/pii/S0893608025013401">fastiSSM: Fast inference of state space model with online model approximation in frequency-domain</a>", Neural Networks, vol. 197, May 2026.
   </li>
 </ul>
 
