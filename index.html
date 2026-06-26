@@ -51,7 +51,7 @@ automation of VLSI circuits and systems.
 <p>
 Dr. Wang has served on the organizing
 committee of International Conference on Computer Design (ICCD), technical program committee of
-Design Automation and Test Conference in Europe (DATE), Asia and South
+International Conference on Computer-Aided Design (ICCAD), Design Automation and Test Conference in Europe (DATE), Asia and South
 Pacific Design Automation Conference (ASP-DAC), International
 Symposium on Quality Electronic Design (ISQED), and International
 Green and Sustainable Computing Conference (IGSC, formerly called IGCC). He also served as reviewer of many journals
@@ -75,14 +75,14 @@ slides which introduce our recent research advances.
 <h2 id="selected_publications">Selected Publications (since 2016)</h2>
 <p>The authors with star marker * are my students.</p>
 <ol type="1">
-  <li><b>H. Wang</b>, J. Chen*, Y. Chen, and J. Li, "<a href="https://www.sciencedirect.com/science/article/pii/S0925231226016838">fastiRNN: Fast inference of recurrent neural networks at the post-training stage</a>", Neurocomputing, vol. 698, October 2026. (<b>JCR Q1, IF 6.7</b>)</li>
-  <li>J. Chen*, Y. Xie*, and <b>H. Wang</b>, "<a href="https://www.sciencedirect.com/science/article/pii/S0893608025013401">fastiSSM: Fast inference of state space model with online model approximation in frequency-domain</a>", Neural Networks, vol. 197, May 2026. (<b>CCF B rank</b>)</li>
+  <li><b>H. Wang</b>, J. Chen*, Y. Chen, and J. Li, "<a href="https://www.sciencedirect.com/science/article/pii/S0925231226016838">fastiRNN: Fast inference of recurrent neural networks at the post-training stage</a>", Neurocomputing, vol. 698, October 2026. (<b>JCR Q1, IF 6.7</b>) <a href="#fastirnn_code">[code]</a></li>
+  <li>J. Chen*, Y. Xie*, and <b>H. Wang</b> (corresponding author), "<a href="https://www.sciencedirect.com/science/article/pii/S0893608025013401">fastiSSM: Fast inference of state space model with online model approximation in frequency-domain</a>", Neural Networks, vol. 197, May 2026. (<b>CCF B rank</b>) <a href="#fastissm_code">[code]</a></li>
   <li><b>H. Wang</b>, Y. Luo*, J. Guo*, Y. Chen, and J. Li, "<a href="./papers/TCAD_homo_3d_author_copy.pdf">Power Budgeting of Homogeneous 3-D Processors in Dark Silicon</a>", IEEE Transactions on Computer-Aided Design of Integrated Circuits and
 Systems (TCAD), 2026. (early access, <b>CCF A rank</b>)</li>
   <li><b>H. Wang</b>, X. Long*, and X.-X. Liu, "<a
-  href="./papers/tnnls_fastesn_author_copy.pdf">FastESN: Fast echo
+  href="./papers/tnnls_fastesn_author_copy.pdf">fastESN: Fast echo
   state network</a>", IEEE Transactions on Neural Networks and
-  Learning Systems (TNNLS), vol. 34, no. 12, pp. 10487-10501, December 2023. (<b>JCR Q1, IF 10.4, CCF B rank</b>)</li>
+  Learning Systems (TNNLS), vol. 34, no. 12, pp. 10487-10501, December 2023. (<b>JCR Q1, IF 10.4, CCF B rank</b>) <a href="#fastesn_code">[code]</a></li>
   <li><b>H. Wang</b>, W. He*, Q. Yang*, X. Peng, and H. Tang, "<a href="./papers/tcad_dbp_author_copy.pdf">DBP: Distributed power
   budgeting for many-core systems in dark silicon</a>", IEEE Transactions on Computer-Aided Design of Integrated Circuits and
 Systems (TCAD), vol. 41, no. 12, pp. 5727-5731, December 2022. (<b>CCF A rank</b>)</li>
@@ -113,7 +113,7 @@ Systems (TCAD), vol. 38, no. 11, pp. 2058-2071, November 2019. (<b>CCF A rank</b
 <li><b>H. Wang</b>, D. Tang*, M. Zhang*, S. Tan, C. Zhang, H. Tang, and
 Y. Yuan, "<a href="./papers/TC_gdp_author_copy.pdf">GDP: A greedy based dynamic power budgeting method for
 multi/many-core systems in dark silicon</a>", IEEE Transactions on
-Computers (TC), vol. 68, no. 4, pp. 526-541, April 2019. (<b>CCF A rank</b>)</li>
+Computers (TC), vol. 68, no. 4, pp. 526-541, April 2019. (<b>CCF A rank</b>) <a href="#gdp_code">[code]</a></li>
 <li>X. Guo*, <b>H. Wang</b> (corresponding author), C. Zhang, H. Tang,
 and Y Yuan, "<a href="./papers/ASPDAC19_pwl.pdf">Leakage-aware thermal management for multi-core systems
 using piecewise linear model based predictive control</a>", Asia and South
@@ -144,7 +144,7 @@ China, January 2016. (<b>invited</b>) (<b>CCF C rank</b>)</li>
 </ol>
 
 <h2 id="open_source_software">Open Source Software</h2>
-<h3>1. Greedy Dynamic Power (GDP)</h3>
+<h3 id="gdp_code">1. Greedy Dynamic Power (GDP)</h3>
 
 Greedy dynamic power (GDP) is a dynamic power budgeting method which
 provides a high power budget for the multi/many-core systems. It
@@ -177,9 +177,9 @@ Computers (TC), vol. 68, no. 4, pp. 526-541, April 2019.
 
 It is compatible with <a href="https://github.com/wanghaiuestc/HotSniper_GDP">Greedy dynamic power (GDP)</a>. 
 
-<h3>3. fastESN: fast echo state network</h3>
+<h3 id="fastesn_code">3. fastESN: fast echo state network</h3>
 
-fastESN creates a smaller echo state network (ESN) model of user defined size, at runtime speed (only in mini seconds), from a trained ESN model. As a result, simulation using fastESN can be much faster than the original ESN.
+fastESN creates a smaller echo state network (ESN) model of user defined size, at runtime speed (only in mini seconds), from a trained ESN model. As a result, inference using fastESN can be much faster than the original ESN.
 
 <ul>
   <li>
@@ -190,7 +190,7 @@ fastESN creates a smaller echo state network (ESN) model of user defined size, a
   </li>
 </ul>
 
-<h3>4. fastiRNN: fast inference of recurrent neural network</h3>
+<h3 id="fastirnn_code">4. fastiRNN: fast inference of recurrent neural network</h3>
 
 fastiRNN is a post-training fast inference framework for general RNN architectures. It is compatible to most RNN structures including the vanilla RNN, LSTM, and GRU, etc. However, for echo state network (ESN) which is also a type of RNN, please use fastESN instead for extra performance. 
 
@@ -203,9 +203,9 @@ fastiRNN is a post-training fast inference framework for general RNN architectur
   </li>
 </ul>
 
-<h3>5. fastiSSM: fast inference of state space model</h3>
+<h3 id="fastissm_code">5. fastiSSM: fast inference of state space model</h3>
 
-fastiSSM accelerates the inference of general SSMs through online model approximation. Besides the standard SSM structure shown above, fastiSSM can also
+fastiSSM accelerates the inference of general SSMs through online model approximation. Besides the standard SSM structure, fastiSSM can also
 be applied to many standard SSM variants, including LSSL, S4D, DSS, GSS, S5, etc.
 
 <ul>
